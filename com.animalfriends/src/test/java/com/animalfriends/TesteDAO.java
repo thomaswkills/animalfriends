@@ -12,7 +12,7 @@ import service.WbServiceAdocao;
 public class TesteDAO {
 
 	@Test
-	public void testaTodasOperacoes() throws Exception {
+	public void teste() throws Exception {
 		DAOGenerico dao = new DAOGenerico();
 		
 		adocao a1 = new adocao(
@@ -84,8 +84,9 @@ public class TesteDAO {
 		Assert.assertEquals("Nome anunciante atualizado", a1.getNomeAnunciante());
 		
 		//deletar
-		dao.excluir(a3);
 		
+		dao.excluir(a3);
+		Assert.assertEquals(null, a3.getId());
 		
 		
 	}
