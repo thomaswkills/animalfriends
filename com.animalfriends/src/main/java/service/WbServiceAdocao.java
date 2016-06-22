@@ -21,7 +21,7 @@ public class WbServiceAdocao extends Application {
 		return "hello";
 	}
 	
-	
+	 
 	
 	@POST
 	@Path("/cadastraAdocao")

@@ -38,7 +38,7 @@ public class DAOGenerico {
         em.getTransaction().commit();
     }
 
-    public void exluir(Object objeto) throws Exception {
+    public void excluir(Object objeto) throws Exception {
         em = Banco.getInstancia().getEm();
         em.getTransaction().begin();
         Method getChave = objeto.getClass().getMethod("getId", new Class[0]);

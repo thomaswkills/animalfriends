@@ -57,11 +57,9 @@ public class adocao implements Serializable {
 			String racaAnimal,
 			String cidadeAnimal,
 			String observacao,
-			Boolean castrado, 
-			Date dataCadastro, 
+			Boolean castrado,  
 			Integer cpfAnunciante, 
 			Integer idadeAnimal,
-			Integer imagens,
 			Double pesoAnimal) {
 		super();
 		this.nomeAnunciante = nomeAnunciante;
@@ -74,7 +72,6 @@ public class adocao implements Serializable {
 		this.racaAnimal = racaAnimal;
 		this.cidadeAnimal = cidadeAnimal;
 		this.castrado = castrado;
-		this.dataCadastro = dataCadastro;
 		this.cpfAnunciante = cpfAnunciante;
 		this.idadeAnimal = idadeAnimal;
 		this.pesoAnimal = pesoAnimal;
@@ -217,5 +214,12 @@ public class adocao implements Serializable {
 	public adocao() {
 		super();
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+
+
    
 }
